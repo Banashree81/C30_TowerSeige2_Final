@@ -34,11 +34,11 @@ class Box {
       else {               
       
         //the tint function is making everything slow because it's called in each frame
-       /* tint (255, this.visibility);  
+        tint (255, this.visibility);  
         if(this.visibility >= 0){         
           this.visibility = this.visibility -15;            
          
-        }      */
+        }     
         image(this.image,0, 0, this.width, this.height);  
         World.remove(world, this.body);
         
